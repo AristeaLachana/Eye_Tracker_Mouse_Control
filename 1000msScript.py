@@ -35,5 +35,5 @@ def gaze_data_callback(gaze_data):
 
 while True:
     eyetracker.subscribe_to(tr.EYETRACKER_GAZE_DATA, gaze_data_callback, as_dictionary=True)
-    time.sleep(1)
+    time.sleep(0.1)
     eyetracker.unsubscribe_from(tr.EYETRACKER_GAZE_DATA, gaze_data_callback)
